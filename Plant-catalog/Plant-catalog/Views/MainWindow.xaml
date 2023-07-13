@@ -6,8 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Plant_catalog" xmlns:local1="clr-namespace:Plant_catalog.Controls" xmlns:local2="clr-namespace:Plant_catalog.ViewModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-
+        Title="Каталог растений" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Window.DataContext>
         <local2:MainViewModel/>
     </Window.DataContext>
