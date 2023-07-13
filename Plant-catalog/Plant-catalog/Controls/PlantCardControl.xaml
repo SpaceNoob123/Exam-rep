@@ -12,7 +12,7 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Image Grid.Column="0" Source="{Binding Photo}" Width="100" Height="100" Stretch="UniformToFill"/>
+        <Image Grid.Column="0" Source="{Binding Image}" Width="100" Height="100" Stretch="UniformToFill"/>
         <StackPanel Grid.Column="1" Margin="10">
             <TextBlock Text="{Binding CommonName}" FontSize="16" FontWeight="Bold"/>
             <TextBlock Text="{Binding ScientificName}"/>

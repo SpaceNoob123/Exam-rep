@@ -18,6 +18,7 @@
                         PositiveProperties = c.String(),
                         NegativeProperties = c.String(),
                         GrowthRegion = c.String(),
+                        ImageUrl = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

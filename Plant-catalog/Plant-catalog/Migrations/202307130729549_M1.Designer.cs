@@ -13,7 +13,7 @@ namespace Plant_catalog.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202307130713508_M1"; }
+            get { return "202307130729549_M1"; }
         }
         
         string IMigrationMetadata.Source

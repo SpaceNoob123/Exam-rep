@@ -15,5 +15,6 @@ namespace Plant_catalog.Models
         public string PositiveProperties { get; set; }
         public string NegativeProperties { get; set; }
         public string GrowthRegion { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

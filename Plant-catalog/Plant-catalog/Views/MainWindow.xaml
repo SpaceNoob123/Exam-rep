@@ -16,13 +16,22 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="searchTextBox" Margin="10" VerticalAlignment="Top" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Search"/>
-        <ItemsControl x:Name="plantsItemsControl" Margin="10" Grid.Row="1" ItemsSource="{Binding FilteredPlants}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <local1:PlantCardControl/>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+            <StackPanel>
+                <TextBox x:Name="searchTextBox" Margin="10" VerticalAlignment="Top" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged}" materialDesign:HintAssist.Hint="Search"/>
+                <ItemsControl x:Name="plantsItemsControl" Margin="10" ItemsSource="{Binding FilteredPlants}">
+                    <ItemsControl.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="Control.Margin" Value="0 0 0 10"/>
+                        </Style>
+                    </ItemsControl.ItemContainerStyle>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <local1:PlantCardControl/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
